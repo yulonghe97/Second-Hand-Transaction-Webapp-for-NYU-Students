@@ -1,9 +1,9 @@
 // view that lists items with a search bar above
 import React, { useState, useEffect, useContext } from 'react';
-import SearchBar from '../components/SearchBar/SearchBar';
-import CustomGridList from '../components/CustomGridList/CustomGridList';
+import SearchBar from '../Components/SearchBar/SearchBar';
+import CustomGridList from '../Components/CustomGridList/CustomGridList';
 import { makeStyles } from '@material-ui/core/styles';
-import CustomAppBar from '../components/CustomAppBar/CustomAppBar';
+import CustomAppBar from '../Components/Template/CustomAppBar/CustomAppBar';
 import { Typography, Button } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
 

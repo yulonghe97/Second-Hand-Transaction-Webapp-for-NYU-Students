@@ -12,7 +12,7 @@ import Container from '@material-ui/core/Container';
 import { useForm } from "react-hook-form";
 import { Auth } from 'aws-amplify';
 import { useHistory } from "react-router";
-import request from '../utils/request';
+import request from '../Utils/request';
 // styling
 const useStyles = makeStyles((theme) => ({
     main: {

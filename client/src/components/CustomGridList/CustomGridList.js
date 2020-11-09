@@ -3,8 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import CustomCard from '../CustomCard/CustomCard';
 import { ListItem, SvgIcon, Typography } from '@material-ui/core';
-import FunnelIcon from '../../Assets/img/icons/funnel.svg';
-import { ListItemContext } from '../../Context/ListItemProvider';
+import FunnelIcon from '../../assets/img/icons/funnel.svg';
+import { ListItemContext } from '../../context/ListItemProvider';
 
 const useStyles = makeStyles((theme) => ({
     root: {

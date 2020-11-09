@@ -1,6 +1,6 @@
 // Controller to request and manage list items data/state
 import React, {useState, useEffect} from 'react';
-import request from '../Utils/request';
+import request from '../utils/request';
 import { createContext } from 'react'; 
 
 export const ListItemContext = createContext();

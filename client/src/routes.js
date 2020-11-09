@@ -1,12 +1,28 @@
 // routes for frontend
 import * as React from "react";
-import Loadable from "./Utils/loadable";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Loadable from "react-loadable";
+import LoadingView from "./views/LoadingView";
 
-const Landing = Loadable("Landing");
-const Login = Loadable("Login");
-const Signup = Loadable("Signup");
-const Home = Loadable("Home");
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+const Landing = Loadable({
+  loader: () => import("./views/Landing"),
+  loading: ({ isLoading }) => isLoading && <LoadingView />,
+});
+
+const Signup = Loadable({
+  loader: () => import("./views/Signup"),
+  loading: ({ isLoading }) => isLoading && <LoadingView />,
+});
+
+const Login = Loadable({
+  loader: () => import("./views/Login"),
+  loading: ({ isLoading }) => isLoading && <LoadingView />,
+});
+
+const Home = Loadable({
+  loader: () => import("./views/Home"),
+  loading: ({ isLoading }) => isLoading && <LoadingView />,
+});
 
 export default class Routes extends React.Component {
   render() {

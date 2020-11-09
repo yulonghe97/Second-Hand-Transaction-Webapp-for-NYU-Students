@@ -1,5 +1,6 @@
+import "./App.css";
 import Routes from "./routes";
-import { ListItemProvider } from './Context/ListItemProvider';
+import { ListItemProvider } from './context/ListItemProvider';
 function App() {
   return (
     <>

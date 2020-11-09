@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import SearchField from 'react-search-field';
 import { makeStyles } from '@material-ui/core/styles';
-import { ListItemContext } from '../../Context/ListItemProvider';
+import { ListItemContext } from '../../context/ListItemProvider';
 const useStyles = makeStyles({
     customSearch: {
         margin: '55px auto',
